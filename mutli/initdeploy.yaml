@@ -26,6 +26,9 @@ spec:
       - name: nginxcontainer
         image: nginx:latest
         resources:
+          requests:
+            memory: "128Mi"
+            cpu: "500m"
           limits:
             memory: "128Mi"
             cpu: "500m"
