@@ -9,6 +9,9 @@ spec:
   - name: myapp
     image: httpd:2.4
     resources:
+      requests:
+          memory: "128Mi"
+          cpu: "500m"
       limits:
         memory: "500Mi"
         cpu: "500m"
